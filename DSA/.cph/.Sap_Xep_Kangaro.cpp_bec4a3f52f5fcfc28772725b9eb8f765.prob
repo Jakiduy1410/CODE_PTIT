@@ -1,0 +1,1 @@
+{"name":"Local: Sap_Xep_Kangaro","url":"d:\\PTIT\\CodePtit\\DSA\\Sap_Xep_Kangaro.cpp","tests":[{"id":1763702501547,"input":"2\n8\n2 5 7 6 9 8 4 2\n8\n9 1 6 2 6 5 8 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Sap_Xep_Kangaro.cpp","group":"local","local":true}

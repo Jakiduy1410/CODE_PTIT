@@ -1,0 +1,1 @@
+{"name":"Local: Xoa_Dau_Ngoac","url":"d:\\PTIT\\CodePtit\\DSA\\Xoa_Dau_Ngoac.cpp","tests":[{"id":1761726423447,"input":"(1+(2*(3+4)))","output":"(1+(2*3+4))\n(1+2*(3+4))\n(1+2*3+4)\n1+(2*(3+4))\n1+(2*3+4)\n1+2*(3+4)\n1+2*3+4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Xoa_Dau_Ngoac.cpp","group":"local","local":true}

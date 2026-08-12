@@ -1,0 +1,1 @@
+{"name":"Local: Di_Chuyen_Me_Cung","url":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\Di_Chuyen_Me_Cung.cpp","tests":[{"id":1765088460630,"input":"4 4\n1 1 4 4\n. . # .\n. . # .\n. # . .\n. # . .","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\Di_Chuyen_Me_Cung.cpp","group":"local","local":true}

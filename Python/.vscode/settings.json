@@ -1,0 +1,8 @@
+{
+    "doki.wallpaper.enabled": true,
+    "python.testing.pytestArgs": [
+        "Bài Tập"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

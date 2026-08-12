@@ -1,0 +1,1 @@
+{"name":"Local: VII","url":"d:\\PTIT\\CODE_PTIT\\TEST\\VII.03 – Các đường chéo.py","tests":[{"id":1773470464054,"input":"6","output":"0 1 2 3 4 5\n1 0 1 2 3 4\n2 1 0 1 2 3\n3 2 1 0 1 2\n4 3 2 1 0 1\n5 4 3 2 1 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\TEST\\VII.03 – Các đường chéo.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: Tich_Lon_Nhat_Nho_Nhat","url":"d:\\PTIT\\CodePtit\\DSA\\Tich_Lon_Nhat_Nho_Nhat.cpp","tests":[{"id":1760675813668,"input":"2\n6 6\n5 7 9 3 6 2\n1 2 6 -1 0 9\n6 6\n1 4 2 3 10 2\n4 2 6 5 2 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Tich_Lon_Nhat_Nho_Nhat.cpp","group":"local","local":true}

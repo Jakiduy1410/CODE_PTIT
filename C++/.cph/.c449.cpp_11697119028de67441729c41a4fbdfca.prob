@@ -1,0 +1,1 @@
+{"name":"Local: c449","url":"d:\\PTIT\\Code Ptit C++ ( New )\\c449.cpp","tests":[{"id":1752720305110,"input":"2\n6 78\n5 20 3 2 5 80\n5 45\n90 70 20 80 50","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\Code Ptit C++ ( New )\\c449.cpp","group":"local","local":true}

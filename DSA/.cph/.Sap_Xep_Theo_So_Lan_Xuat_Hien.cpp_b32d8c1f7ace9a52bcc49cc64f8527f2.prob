@@ -1,0 +1,1 @@
+{"name":"Local: Sap_Xep_Theo_So_Lan_Xuat_Hien","url":"d:\\PTIT\\CodePtit\\DSA\\Sap_Xep_Theo_So_Lan_Xuat_Hien.cpp","tests":[{"id":1761125483102,"input":"2\n5\n5 5 4 6 4\n5\n9 9 9 2 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Sap_Xep_Theo_So_Lan_Xuat_Hien.cpp","group":"local","local":true}

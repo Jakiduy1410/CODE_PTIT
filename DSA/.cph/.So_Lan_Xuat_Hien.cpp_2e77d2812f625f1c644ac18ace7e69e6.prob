@@ -1,0 +1,1 @@
+{"name":"Local: So_Lan_Xuat_Hien","url":"d:\\PTIT\\CodePtit\\DSA\\So_Lan_Xuat_Hien.cpp","tests":[{"id":1760521734902,"input":"2\n7 2\n1 1 2 2 2 2 3\n7 4\n1 1 2 2 2 2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\So_Lan_Xuat_Hien.cpp","group":"local","local":true}

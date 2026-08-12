@@ -1,0 +1,1 @@
+{"name":"Local: Tim_Va_Tach_Tu","url":"d:\\PTIT\\CODE_PTIT\\TEST_3\\Tim_Va_Tach_Tu.py","tests":[{"id":1781857047850,"input":"2\nab BB aa Bc da\nbB BC ca cd\ntin hoc Co so 2\n2 Tin chi","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\TEST_3\\Tim_Va_Tach_Tu.py","group":"local","local":true}

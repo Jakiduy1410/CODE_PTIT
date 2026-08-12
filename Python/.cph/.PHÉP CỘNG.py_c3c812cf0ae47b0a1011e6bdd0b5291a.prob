@@ -1,0 +1,1 @@
+{"name":"Local: PHÉP CỘNG","url":"d:\\PTIT\\CODE_PTIT\\Python\\PHÉP CỘNG.py","tests":[{"id":1768274589936,"input":"1 + 2 = 3","output":""},{"id":1768274594333,"input":"4 + 1 = 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\PHÉP CỘNG.py","group":"local","local":true}

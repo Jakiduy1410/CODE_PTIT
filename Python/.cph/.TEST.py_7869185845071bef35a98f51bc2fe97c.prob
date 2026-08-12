@@ -1,0 +1,1 @@
+{"name":"Local: TEST","url":"d:\\PTIT\\CODE_PTIT\\Python\\TEST.py","tests":[{"id":1768207443967,"input":"","output":""},{"id":1772767238820,"input":"381","output":""},{"id":1772767250031,"input":"6.6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\TEST.py","group":"local","local":true}

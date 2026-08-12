@@ -1,0 +1,1 @@
+{"name":"Local: Stack","url":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\Stack.cpp","tests":[{"id":1766327481275,"input":"3\n((a)\n(a))\n(((abc))((d)))))","output":"-10a1\n0a1-1\n000abc1100d111-1-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\Stack.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: Tong_Gan_0_Nhat","url":"d:\\PTIT\\CodePtit\\DSA\\Tong_Gan_0_Nhat.cpp","tests":[{"id":1760519570850,"input":"3\n3\n-8 -66 -60\n6\n-21 -67 21 -18 4 6\n6\n-21 -67 -37 -18 4 -65  ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Tong_Gan_0_Nhat.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: c116","url":"d:\\PTIT\\Code Ptit C++ ( New )\\c116.cpp","tests":[{"id":1747125732171,"input":"2\n6\n10","output":"1 2 3 2 5 2\n1 2 3 2 5 2 7 2 3 2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\Code Ptit C++ ( New )\\c116.cpp","group":"local","local":true}

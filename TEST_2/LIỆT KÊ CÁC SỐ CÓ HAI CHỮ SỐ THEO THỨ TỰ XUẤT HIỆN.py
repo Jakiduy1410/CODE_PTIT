@@ -1,0 +1,15 @@
+
+def main():
+    s = input()
+    a = {}
+    for i in range(0,len(s),2):
+        tmp = s[i:i+2]
+        if len(tmp) != 2:
+            break
+        a[tmp] = a.get(tmp,0) + 1
+    b = list(a.keys())
+    #a = sorted(a,key=lambda x: int(x))
+    print(' '.join(a))
+    
+
+main()

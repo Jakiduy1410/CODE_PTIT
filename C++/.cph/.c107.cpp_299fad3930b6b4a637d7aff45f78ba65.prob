@@ -1,0 +1,1 @@
+{"name":"Local: c107","url":"d:\\PTIT\\Code Ptit C++ ( New )\\c107.cpp","tests":[{"id":1749959279423,"input":"2\n101 A B B A D C C A B D C C A B A\n102 B D B A D C D A B D B D A D D","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\Code Ptit C++ ( New )\\c107.cpp","group":"local","local":true}

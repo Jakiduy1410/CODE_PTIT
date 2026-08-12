@@ -1,0 +1,1 @@
+{"name":"Local: DeQue","url":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\DeQue.cpp","tests":[{"id":1766326956995,"input":"1\n10\n5 10 15 20 25 30 35 40 45 50\nFFBBBFF","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\DeQue.cpp","group":"local","local":true}

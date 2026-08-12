@@ -1,0 +1,1 @@
+{"name":"Local: Doi_Cho_Cac_Chu_So","url":"d:\\PTIT\\CodePtit\\DSA\\Doi_Cho_Cac_Chu_So.cpp","tests":[{"id":1763187122469,"input":"3\n4\n1234567\n3\n3435335\n2\n9998","output":"7654321\n5543333\n4301"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Doi_Cho_Cac_Chu_So.cpp","group":"local","local":true}

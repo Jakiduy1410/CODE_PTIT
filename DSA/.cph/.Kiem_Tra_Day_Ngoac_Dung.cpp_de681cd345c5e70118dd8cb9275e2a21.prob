@@ -1,0 +1,1 @@
+{"name":"Local: Kiem_Tra_Day_Ngoac_Dung","url":"d:\\PTIT\\CodePtit\\DSA\\Kiem_Tra_Day_Ngoac_Dung.cpp","tests":[{"id":1761533042443,"input":"2\n[()]{}{[()()]()}\n[(])","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Kiem_Tra_Day_Ngoac_Dung.cpp","group":"local","local":true}

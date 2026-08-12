@@ -1,0 +1,1 @@
+{"name":"Local: ĐỊA CHỈ IP","url":"d:\\PTIT\\CODE_PTIT\\Python\\ĐỊA CHỈ IP.py","tests":[{"id":1770012836418,"input":"2\n192.168.1.1\n256.255.255.255","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\ĐỊA CHỈ IP.py","group":"local","local":true}

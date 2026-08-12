@@ -1,0 +1,1 @@
+{"name":"Local: DÃY CON NGẮN NHẤT","url":"d:\\PTIT\\CODE_PTIT\\Python\\DÃY CON NGẮN NHẤT.py","tests":[{"id":1769745369502,"input":"3\n8 3\n6 9 7 10 12 24 36 27\n4 3\n2 4 6 8\n4 6\n1 2 3 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\DÃY CON NGẮN NHẤT.py","group":"local","local":true}

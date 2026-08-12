@@ -1,0 +1,1 @@
+{"name":"Local: Danh_So_Cap_Ngoac","url":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\Danh_So_Cap_Ngoac.cpp","tests":[{"id":1766242823240,"input":"2\n(a + (b * c) ) + (d/e)\n( ( () ) ( () ) )","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\SAMSUNG_CONTEST_2025\\Danh_So_Cap_Ngoac.cpp","group":"local","local":true}

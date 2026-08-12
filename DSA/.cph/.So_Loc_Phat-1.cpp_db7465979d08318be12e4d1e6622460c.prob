@@ -1,0 +1,1 @@
+{"name":"Local: So_Loc_Phat-1","url":"d:\\PTIT\\CodePtit\\DSA\\So_Loc_Phat-1.cpp","tests":[{"id":1761747818833,"input":"2\n2\n3","output":"88 86 68 66 8 6\n888 886 868 866 688 686 668 666 88 86 68 66 8 6"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\So_Loc_Phat-1.cpp","group":"local","local":true}

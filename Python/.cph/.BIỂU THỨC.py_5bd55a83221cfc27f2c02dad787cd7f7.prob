@@ -1,0 +1,1 @@
+{"name":"Local: BIỂU THỨC","url":"d:\\PTIT\\CODE_PTIT\\Python\\BIỂU THỨC.py","tests":[{"id":1772616633919,"input":"2\n(a + (b *c) ) + (d/e)\n( ( () ) ( () ) )","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\BIỂU THỨC.py","group":"local","local":true}

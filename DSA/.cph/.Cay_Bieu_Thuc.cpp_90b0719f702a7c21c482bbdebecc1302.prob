@@ -1,0 +1,1 @@
+{"name":"Local: Cay_Bieu_Thuc","url":"d:\\PTIT\\CodePtit\\DSA\\Cay_Bieu_Thuc.cpp","tests":[{"id":1762953463856,"input":"2\nab+ef*g*-\nwlrb+-*","output":"a + b - e * f * g\nw * l - r + b"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CodePtit\\DSA\\Cay_Bieu_Thuc.cpp","group":"local","local":true}

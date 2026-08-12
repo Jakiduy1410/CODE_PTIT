@@ -1,0 +1,1 @@
+{"name":"Local: BẦU CỬ","url":"d:\\PTIT\\CODE_PTIT\\Python\\BẦU CỬ.py","tests":[{"id":1770610167382,"input":"10 4\n2 3 1 2 3 4 1 2 3 2","output":""},{"id":1770703176582,"input":"8 4\n\n1 2 3 4 4 3 2 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\BẦU CỬ.py","group":"local","local":true}

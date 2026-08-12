@@ -1,0 +1,1 @@
+{"name":"Local: ĐỔI CƠ SỐ - 2","url":"d:\\PTIT\\CODE_PTIT\\Python\\ĐỔI CƠ SỐ - 2.py","tests":[{"id":1768525655363,"input":"4\n8\n10010100010010101\n2\n10010100010010101\n16\n101011000101\n16\n000000000","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\PTIT\\CODE_PTIT\\Python\\ĐỔI CƠ SỐ - 2.py","group":"local","local":true}
