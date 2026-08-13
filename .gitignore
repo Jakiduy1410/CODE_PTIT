@@ -1,2 +1,3 @@
-/.cph
-/.vscode
+# Exclude .cph and .vscode from all directories
+.cph
+.vscode
