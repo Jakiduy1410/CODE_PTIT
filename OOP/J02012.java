@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class J02010 {
+public class J02012 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         if (!sc.hasNextInt()) return;
@@ -10,21 +10,21 @@ public class J02010 {
             a[i] = sc.nextInt();
         }
 
-        int step = 1;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i + 1; j < n; j++) {
-                if (a[j] < a[i]) {
-                    int temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
-                }
+        System.out.println("Buoc 0: " + a[0]);
+        for (int i = 1; i < n; i++) {
+            int key = a[i];
+            int j = i - 1;
+            while (j >= 0 && a[j] > key) {
+                a[j + 1] = a[j];
+                j--;
             }
-            System.out.print("Buoc " + step + ":");
-            for (int k = 0; k < n; k++) {
+            a[j + 1] = key;
+
+            System.out.print("Buoc " + i + ":");
+            for (int k = 0; k <= i; k++) {
                 System.out.print(" " + a[k]);
             }
             System.out.println();
-            step++;
         }
         sc.close();
     }
