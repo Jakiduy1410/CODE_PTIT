@@ -12,7 +12,6 @@ public class J02023 {
             return;
         }
 
-        // Tìm số lớn nhất
         int tempS = s;
         int[] maxNum = new int[n];
         for (int i = 0; i < n; i++) {
@@ -21,8 +20,7 @@ public class J02023 {
             tempS -= digit;
         }
 
-        // Tìm số nhỏ nhất
-        tempS = s - 1; // Để dành 1 đơn vị cho chữ số đầu tiên
+        tempS = s - 1;
         int[] minNum = new int[n];
         for (int i = n - 1; i >= 1; i--) {
             int digit = Math.min(9, tempS);
