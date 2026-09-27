@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02013 - Sap Xep Noi Bot
+// De bai: Mo phong thuat toan Bubble Sort va in trang thai mang sau moi buoc cho den khi mang da sap xep
+// *****************************************************************
 import java.util.Scanner;
 
 public class J02013 {

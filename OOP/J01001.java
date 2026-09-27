@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01001 - Hinh Chu Nhat
+// De bai: Nhap chieu dai va chieu rong, neu hop le (>0) in ra chu vi va dien tich, nguoc lai in 0
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01001 {

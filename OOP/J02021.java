@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02021 - Liet Ke To Hop - 2
+// De bai: Liet ke tat ca cac to hop chap K cua N phan tu theo thu tu tu dien, in cac to hop cach nhau dau cach va in tong so to hop
+// *****************************************************************
 import java.util.*;
 
 public class J02021{

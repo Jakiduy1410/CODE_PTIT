@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02006 - Hop Cua Hai Day So
+// De bai: Tim tap hop hop cua hai day so nguyen, loai bo trung lap va in tang dan
+// *****************************************************************
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.*;

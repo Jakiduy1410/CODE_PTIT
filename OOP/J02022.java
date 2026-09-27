@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02022 - So Xa Cach
+// De bai: Liet ke cac hoan vi cua 1..N sao cho khong co hai chu so lien ke nao co chenh lech bang 1
+// *****************************************************************
 import java.util.*;
 
 public class J02022 {

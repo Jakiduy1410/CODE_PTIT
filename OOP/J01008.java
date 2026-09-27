@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01008 - Phan Tich Thua So Nguyen To
+// De bai: Phan tich so nguyen N thanh tich cac thua so nguyen to dang p(k)
+// *****************************************************************
 import java.util.*;
 
 public class J01008 {

@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02009 - Xep Hang
+// De bai: Cho N hanh khach den tai thoi diem T voi thoi gian lam thu tuc D, tim thoi diem nguoi cuoi cung lam xong
+// *****************************************************************
 import java.util.*;
 
 public class J02009 {

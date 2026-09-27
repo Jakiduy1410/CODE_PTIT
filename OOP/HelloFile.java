@@ -1,3 +1,7 @@
+// *****************************************************************
+// HELLOFILE - Hello File
+// De bai: Doc va in toan bo noi dung tu tap tin Hello.txt ra man hinh
+// *****************************************************************
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths; // Sửa: Thêm import Paths để dùng ở dưới

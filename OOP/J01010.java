@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01010 - Cat Doi
+// De bai: Cat doi cac chu so 0, 1, 8, 9 thanh 0, 1; neu co chu so khac hoac ket qua = 0 thi in INVALID
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01010 {

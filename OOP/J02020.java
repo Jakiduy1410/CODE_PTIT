@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02020 - Liet Ke To Hop - 1
+// De bai: Liet ke tat ca cac to hop chap K cua N phan tu theo thu tu tu dien, in moi to hop tren 1 dong va in tong so to hop
+// *****************************************************************
 import java.util.*;
 public class J02020 {
     static int n,k;

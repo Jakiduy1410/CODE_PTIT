@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02014 - Diem Can Bang
+// De bai: Tim vi tri phan tu co tong cac so ben trai bang tong cac so ben phai (in chi so 1-based dau tien hoac -1)
+// *****************************************************************
 import java.util.Scanner;
 
 public class J02014 {

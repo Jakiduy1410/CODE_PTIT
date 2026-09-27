@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01012 - Uoc So Chia Het Cho 2
+// De bai: Dem so luong uoc so chia het cho 2 cua so nguyen duong N
+// *****************************************************************
 import java.util.*;
 
 public class J01012{

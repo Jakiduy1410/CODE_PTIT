@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02024 - Day Con Co Tong Le
+// De bai: Liet ke cac day con co tong phan tu la so le, sap xep day con giam dan va in theo thu tu tu dien tang dan
+// *****************************************************************
 import java.util.*;
 
 public class J02024 {

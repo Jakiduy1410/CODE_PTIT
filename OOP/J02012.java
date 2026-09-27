@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02012 - Sap Xep Chen
+// De bai: Mo phong thuat toan Insertion Sort va in trang thai day con tang dan sau moi buoc
+// *****************************************************************
 import java.util.Scanner;
 
 public class J02012 {

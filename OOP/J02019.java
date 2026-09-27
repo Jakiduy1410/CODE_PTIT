@@ -1,4 +1,7 @@
-
+// *****************************************************************
+// J02019 - Khoang Cach Nho Hon K / So Phong Phu
+// De bai: Dem cac so trong doan [a, b] co tong cac uoc so thuc su lon hon chinh no
+// *****************************************************************
 import java.util.*;
 
 public class J02019{

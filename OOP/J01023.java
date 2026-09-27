@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01023 - Phep Toan Co Ban
+// De bai: Dien chu so vao dau '?' de phep toan a [op] b = c dung, in ra bieu thuc dung hoac WRONG PROBLEM!
+// *****************************************************************
 import java.util.*;
 
 public class J01023 {

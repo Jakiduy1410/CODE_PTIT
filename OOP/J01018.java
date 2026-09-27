@@ -1,4 +1,7 @@
-
+// *****************************************************************
+// J01018 - So Khong Giam / So Khong Lien Ke
+// De bai: Kiem tra hai chu so lien ke cach nhau dung 2 don vi va tong cac chu so chia het cho 10
+// *****************************************************************
 import java.util.*;
 
 public class J01018 {
