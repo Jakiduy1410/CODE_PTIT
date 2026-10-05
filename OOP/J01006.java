@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01006 - Tinh So Fibonacci Thu N
+// De bai: Tinh va in ra so Fibonacci thu N voi 1 <= N <= 92
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01006 {

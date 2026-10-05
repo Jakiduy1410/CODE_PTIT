@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02017 - Thu Gon Day So
+// De bai: Xoa 2 phan tu ke tiep co tong chan lien tuc cho den khi khong xoa duoc nua, in so phan tu con lai
+// *****************************************************************
 import java.util.*;
 
 public class J02017{

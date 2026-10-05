@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02008 - Boi So Nho Nhat Cua N So Nguyen Duong Dau Tien
+// De bai: Tim BCNN cua cac so tu 1 den N bang cach nhan luy thua cuc dai cua tung so nguyen to <= N
+// *****************************************************************
 import java.util.*;
 
 public class J02008{

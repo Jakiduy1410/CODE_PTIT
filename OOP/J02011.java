@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02011 - Sap Xep Chon
+// De bai: Mo phong thuat toan Selection Sort va in trang thai mang sau moi buoc
+// *****************************************************************
 import java.util.Scanner;
 
 public class J02011 {

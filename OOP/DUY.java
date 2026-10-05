@@ -1,3 +1,7 @@
+// *****************************************************************
+// DUY - Chuong trinh mo phong ATM / Quan ly tai khoan
+// De bai: Thuc hien Nap tien, Rut tien, Kiem tra so du tai khoan
+// *****************************************************************
 import java.util.Scanner;
 
 public class DUY {

@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01021 - Tinh Luy Thua
+// De bai: Tinh a^b modulo 10^9+7 bang thuat toan luy thua nhi phan, dung khi a=b=0
+// *****************************************************************
 import java.util.*;
 
 public class J01021{

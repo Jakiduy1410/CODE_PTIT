@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01007 - Kiem Tra So Fibonacci
+// De bai: Kiem tra so nguyen khong am N co thuoc day Fibonacci hay khong
+// *****************************************************************
 import java.util.Scanner;
 import java.util.Arrays;
 

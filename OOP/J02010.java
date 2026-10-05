@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02010 - Sap Xep Doi Cho Truc Tiep
+// De bai: Mo phong thuat toan Interchange Sort va in trang thai mang sau moi buoc
+// *****************************************************************
 import java.util.Scanner;
 
 public class J02010 {

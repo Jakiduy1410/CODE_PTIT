@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01004 - So Nguyen To
+// De bai: Kiem tra so nguyen duong N co phai la so nguyen to hay khong, in YES hoac NO
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01004 {

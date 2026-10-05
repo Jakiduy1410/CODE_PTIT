@@ -1,4 +1,7 @@
-
+// *****************************************************************
+// J01020 - So Day Du
+// De bai: Tim boi so nho nhat k*N chua du tat ca 10 chu so tu 0 den 9, in Impossible neu N=0
+// *****************************************************************
 import java.util.*;
 
 public class J01020 {

@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02007 - Dem So Lan Xuat Hien
+// De bai: Dem so lan xuat hien cua tung phan tu trong mang theo dung thu tu xuat hien dau tien
+// *****************************************************************
 import java.util.*;
 
 public class J02007 {

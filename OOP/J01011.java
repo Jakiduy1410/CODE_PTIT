@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01011 - Boi So Chung Nho Nhat - Uoc So Chung Lon Nhat
+// De bai: Tim BCNN va UCLN cua 2 so nguyen duong a va b
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01011 {

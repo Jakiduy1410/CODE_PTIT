@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02023 - Lua Chon Tham Lam
+// De bai: Tim so nho nhat va lon nhat co N chu so va tong cac chu so bang S bang thuat toan tham lam
+// *****************************************************************
 import java.util.Scanner;
 
 public class J02023 {

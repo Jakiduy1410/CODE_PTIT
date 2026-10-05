@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01005 - Chia Tam Giac
+// De bai: Chia tam giac chieu cao H thanh N phan dien tich bang nhau, in ra khoang cach tu dinh toi cac duong chia
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01005 {

@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01017 - So Lien Ke
+// De bai: Kiem tra so nguyen co tat ca cac chu so lien ke deu co khoang cach tuyet doi bang 1 hay khong
+// *****************************************************************
 import java.util.*;
 
 public class J01017 {

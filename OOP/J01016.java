@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01016 - Chu So 4 Va Chu So 7
+// De bai: Kiem tra tong so luong chu so 4 va 7 trong so N co bang 4 hoac 7 hay khong
+// *****************************************************************
 import java.util.*;
 
 public class J01016{

@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01002 - Tinh Tong N So Nguyen Duong Dau Tien
+// De bai: Tinh tong Sn = N*(N+1)/2 voi 1 <= N <= 10^9
+// *****************************************************************
 import java.util.Scanner;
 
 public class J01002 {

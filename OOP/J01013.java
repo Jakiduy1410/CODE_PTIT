@@ -1,3 +1,7 @@
+// *****************************************************************
+// J01013 - Tong Uoc So Nguyen To
+// De bai: Sang nguyen to tim uoc nho nhat, tinh tong tat ca cac thua so nguyen to cua N so nguyen
+// *****************************************************************
 import java.util.*;
 
 public class J01013 {

@@ -1,3 +1,7 @@
+// *****************************************************************
+// J02016 - Bo Ba So Pytago
+// De bai: Kiem tra mang so nguyen co ton tai bo 3 so a, b, c thoa man a^2 + b^2 = c^2 hay khong
+// *****************************************************************
 import java.io.*;
 import java.util.*;
 
