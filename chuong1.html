@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mạng Máy Tính - Phần 1: Khái Niệm Cơ Bản</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 16px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 24px;
+    }
+    .question-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .q-title {
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .options {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 12px 0;
+    }
+    .options li {
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .options li:hover {
+      background-color: #f1f3f4;
+    }
+    /* Khi click chọn */
+    .options li.correct-choice {
+      background-color: #e6f4ea !important;
+      border-color: #34a853 !important;
+      color: #137333 !important;
+      font-weight: 600;
+    }
+    .options li.wrong-choice {
+      background-color: #fce8e6 !important;
+      border-color: #ea4335 !important;
+      color: #c5221f !important;
+    }
+    /* Nút bấm xem đáp án */
+    .btn-show {
+      background: none;
+      border: 1px solid #1a73e8;
+      color: #1a73e8;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-show:hover {
+      background-color: #e8f0fe;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PHẦN 1: CÁC KHÁI NIỆM CƠ BẢN (1.1 - 1.57)</h1>
+
+  <!-- 1.1 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.1: Các mạng máy tính được thiết kế và cài đặt theo quan điểm:</div>
+    <ul class="options">
+      <li data-correct="true">A. Có cấu trúc đa tầng</li>
+      <li>B. Nhiều tầng</li>
+      <li>C. Theo lớp</li>
+      <li>D. Tập hợp</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.2 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.2: Khi sử dụng mạng máy tính ta sẽ thu được các lợi ích:</div>
+    <ul class="options">
+      <li>A. Chia sẻ tài nguyên (ổ cứng, cơ sở dữ liệu, máy in, các phần mềm tiện ích...)</li>
+      <li>B. Quản lý tập trung</li>
+      <li>C. Tận dụng năng lực xử lý của các máy tính rỗi kết hợp lại để thực hiện các công việc lớn</li>
+      <li data-correct="true">D. Tất cả đều đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.3 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.3: Đơn vị cơ bản đo tốc độ truyền dữ liệu là:</div>
+    <ul class="options">
+      <li>A. Bit</li>
+      <li>B. Byte</li>
+      <li data-correct="true">C. Bps (bit per second)</li>
+      <li>D. Hz</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.4 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.4: Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khác phải trải qua giai đoạn nào:</div>
+    <ul class="options">
+      <li>A. Phân tích dữ liệu</li>
+      <li>B. Nén dữ liệu</li>
+      <li data-correct="true">C. Đóng gói</li>
+      <li>D. Lọc dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.5 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.5: Kết nối mạng sử dụng các giao thức khác nhau bằng các:</div>
+    <ul class="options">
+      <li>A. Bộ chuyển tiếp</li>
+      <li>B. Cổng giao tiếp</li>
+      <li>C. SONET</li>
+      <li data-correct="true">D. Bộ định tuyến</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.6 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.6: Nhược điểm của mạng dạng hình sao (Star) là:</div>
+    <ul class="options">
+      <li>A. Khó cài đặt và bảo trì</li>
+      <li>B. Khó khắc phục khi lỗi cáp xảy ra, và ảnh hưởng tới các nút mạng khác</li>
+      <li data-correct="true">C. Cần quá nhiều cáp để kết nối tới nút mạng trung tâm</li>
+      <li>D. Không có khả năng thay đổi khi đã lắp đặt</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.7 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.7: Đặc điểm của mạng dạng Bus:</div>
+    <ul class="options">
+      <li>A. Tất cả các nút mạng kết nối vào nút mạng trung tâm (ví dụ như Hub)</li>
+      <li data-correct="true">B. Tất cả các nút kết nối trên cùng một đường truyền vật lý</li>
+      <li>C. Tất cả các nút mạng đều kết nối trực tiếp với nhau</li>
+      <li>D. Mỗi nút mạng kết nối với 2 nút mạng còn lại</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.8 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.8: Trong kỹ thuật chuyển mạch kênh, trước khi trao đổi thông tin, hệ thống sẽ thiết lập kết nối giữa 2 thực thể bằng một:</div>
+    <ul class="options">
+      <li data-correct="true">A. Đường truyền vật lý</li>
+      <li>B. Kết nối ảo</li>
+      <li>C. Đường ảo</li>
+      <li>D. Đường truyền logic</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.9 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.9: Kết nối liên mạng các mạng LAN, WAN, MAN độc lập với nhau bằng các thiết bị có chức năng:</div>
+    <ul class="options">
+      <li>A. Kiểm soát lỗi, kiểm soát luồng</li>
+      <li data-correct="true">B. Định tuyến</li>
+      <li>C. Điều khiển liên kết</li>
+      <li>D. Điều khiển lưu lượng và đồng bộ hoá</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.10 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.10: Cáp UTP Cat5e sử dụng đầu nối:</div>
+    <ul class="options">
+      <li>A. RJ-58</li>
+      <li>B. BNC</li>
+      <li data-correct="true">C. RJ-45</li>
+      <li>D. ST</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.11 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.11: Cáp UTP Cat 5 có bao nhiêu đôi cáp:</div>
+    <ul class="options">
+      <li>A. 2</li>
+      <li data-correct="true">B. 4</li>
+      <li>C. 6</li>
+      <li>D. 8</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.12 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.12: Đặc điểm quan trọng của kiến trúc mạng client/server (khách/chủ):</div>
+    <ul class="options">
+      <li>A. Client/server là kiến trúc phân cấp, client đóng vai trò yêu cầu và server đáp ứng lại các yêu cầu đó.</li>
+      <li>B. Server là host luôn hoạt động, thường có IP cố định, có nhóm các server để chia sẻ công việc. Client có kết nối không liên tục, địa chỉ IP có thể thay đổi, truyền thông với server và thường không truyền thông trực tiếp với client khác.</li>
+      <li data-correct="true">C. Câu A và B đều đúng</li>
+      <li>D. Câu A và B đều sai</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.13 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.13: Khẳng định nào sau đây là đúng khi nói về mạng có cấu trúc điểm - điểm:</div>
+    <ul class="options">
+      <li>A. Mạng quảng bá</li>
+      <li data-correct="true">B. Nối từng cặp node lại với nhau theo một hình học xác định</li>
+      <li>C. Mạng lưu và chuyển tiếp (Store - and - Forward)</li>
+      <li>D. Các node trung gian: tiếp nhận, lưu trữ tạm thời và gửi tiếp thông tin</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.14 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.14: Khẳng định nào sau đây là đúng khi nói về nhược điểm của mạng có cấu trúc điểm - điểm:</div>
+    <ul class="options">
+      <li>A. Khả năng đụng độ thông tin (collision) thấp</li>
+      <li data-correct="true">B. Hiệu suất sử dụng đường truyền thấp, chiếm dụng nhiều tài nguyên</li>
+      <li>C. Độ trễ lớn, tốn nhiều thời gian để thiết lập đường truyền và xử lý tại các node</li>
+      <li>D. Tốc độ trao đổi thông tin thấp cao (1 gbps)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.15 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.15: Khẳng định nào sau đây là đúng khi nói về đặc trưng của mạng quảng bá:</div>
+    <ul class="options">
+      <li data-correct="true">A. Tất cả các node cùng truy nhập chung trên một đường truyền vật lý</li>
+      <li>B. Nối từng cặp node lại với nhau theo một hình học xác định</li>
+      <li>C. Các node trung gian: tiếp nhận, lưu trữ tạm thời và gửi tiếp thông tin</li>
+      <li>D. Khả năng đụng độ thông tin (collision) thấp</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.16 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.16: Khẳng định nào sau đây là đúng khi nói về mạng chuyển mạch kênh:</div>
+    <ul class="options">
+      <li data-correct="true">A. Thiết lập liên kết vật lý, truyền dữ liệu và giải phóng liên kết giữa 2 thực thể</li>
+      <li>B. Thiết lập liên kết logic, truyền dữ liệu và giải phóng liên kết giữa 2 thực thể</li>
+      <li>C. Truyền dữ liệu giữa 2 thực thể</li>
+      <li>D. Thiết lập liên kết và giải phóng liên kết giữa 2 thực thể</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.17 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.17: Khẳng định nào sau đây là đúng khi nói về mạng chuyển mạch gói:</div>
+    <ul class="options">
+      <li>A. Gói tin lưu chuyển trên các kết nối logic</li>
+      <li>B. Gói tin lưu chuyển trên các kết nối vật lý</li>
+      <li>C. Gói tin lưu chuyển độc lập hướng đích</li>
+      <li data-correct="true">D. Gói tin lưu chuyển trên các kết nối logic hướng đích và trên một đường có thể có nhiều gói tin cùng lưu chuyển</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.18 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.18: Khẳng định nào sau đây là đúng khi nói về quá trình phân mảnh gói tin:</div>
+    <ul class="options">
+      <li>A. Làm giảm thời gian xử lý</li>
+      <li data-correct="true">B. Làm tăng tính linh hoạt của mạng</li>
+      <li>C. Ảnh hưởng đến tốc độ trao đổi dữ liệu trong mạng</li>
+      <li>D. Tăng tốc độ trao đổi thông tin trong mạng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.19 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.19: Khẳng định nào sau đây là đúng khi nói về truyền dữ liệu theo phương thức hướng liên kết:</div>
+    <ul class="options">
+      <li data-correct="true">A. Có độ tin cậy cao, đảm bảo chất lượng dịch vụ và có xác nhận</li>
+      <li>B. Không cần độ tin cậy cao, chất lượng dịch vụ thấp</li>
+      <li>C. Có xác nhận, không kiểm soát lỗi, kiểm soát luồng</li>
+      <li>D. Độ tin cậy cao, không xác nhận</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.20 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.20: Khẳng định nào sau đây là đúng nói về cấu trúc vật lý của mạng:</div>
+    <ul class="options">
+      <li>A. Giao thức mạng (Protocol)</li>
+      <li data-correct="true">B. Hình trạng mạng (Topology)</li>
+      <li>C. Phương tiện truyền</li>
+      <li>D. Các dịch vụ mạng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.21 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.21: Mạng Internet là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Mạng của các máy tính toàn cầu kết nối lại với nhau theo giao thức TCP/IP</li>
+      <li>B. Mạng diện rộng</li>
+      <li>C. Mạng máy tính toàn cầu</li>
+      <li>D. Mạng của các mạng con kết nối lại với nhau</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.22 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.22: Trong mạng hình BUS, tất cả các trạm truy nhập ngẫu nhiên vào:</div>
+    <ul class="options">
+      <li data-correct="true">A. Đường truyền chung</li>
+      <li>B. Máy chủ mạng</li>
+      <li>C. Bộ nhớ đệm</li>
+      <li>D. Các thiết bị kết nối mạng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.23 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.23: Mạng LAN hình sao (STAR) khi có sự cố:</div>
+    <ul class="options">
+      <li>A. Sẽ ngừng hoạt động toàn bộ hệ thống</li>
+      <li>B. Không ảnh hưởng tới hoạt động toàn bộ hệ thống</li>
+      <li data-correct="true">C. Chỉ ảnh hưởng đến trạm có sự cố</li>
+      <li>D. Chỉ ảnh hưởng đến một phần của hệ thống</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.24 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.24: Với kiểu kết nối mạng theo dạng hình sao (Star), khi một trạm trong mạng ngưng hoạt động thì các trạm còn lại:</div>
+    <ul class="options">
+      <li data-correct="true">A. Hoạt động bình thường</li>
+      <li>B. Đều ngưng hoạt động</li>
+      <li>C. Hoạt động không ổn định</li>
+      <li>D. Các câu trên đều sai</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.25 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.25: Hình trạng mạng nào cho phép tất cả các cặp thiết bị đều có 1 đường nối vật lý trực tiếp:</div>
+    <ul class="options">
+      <li>A. Star (dạng sao)</li>
+      <li>B. Bus (dạng đường trục)</li>
+      <li data-correct="true">C. Mesh (dạng lưới)</li>
+      <li>D. Hierarchical (dạng phân cấp)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.26 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.26: Về nguyên tắc cơ bản, dùng cáp UTP Cat5e nào sau đây để kết nối trực tiếp giữa 2 PC với nhau:</div>
+    <ul class="options">
+      <li>A. Cáp thẳng</li>
+      <li data-correct="true">B. Cáp chéo</li>
+      <li>C. Cáp cuộn</li>
+      <li>D. Cả 3 loại trên</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.27 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.27: Kết quả nào sau đây không đúng:</div>
+    <ul class="options">
+      <li>A. 163 chuyển sang nhị phân sẽ có giá trị là: 10100011</li>
+      <li data-correct="true">B. 111 chuyển sang nhị phân sẽ có giá trị là : 01110011</li>
+      <li>C. 125 chuyển sang nhị phân sẽ có giá trị là : 01111101</li>
+      <li>D. 178 chuyển sang nhị phân sẽ có giá trị là : 10110010</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.28 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.28: Kiểu mạng nào được hạn chế ở cấp tòa cao ốc hay một công sở:</div>
+    <ul class="options">
+      <li>A. GAN</li>
+      <li>B. WAN</li>
+      <li>C. MAN</li>
+      <li data-correct="true">D. LAN</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.29 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.29: Chiều dài tối đa của một đoạn trong kiến trúc 100Base-TX:</div>
+    <ul class="options">
+      <li>A. 3 km</li>
+      <li data-correct="true">B. 100 mét</li>
+      <li>C. 550 mét</li>
+      <li>D. 25 mét</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.30 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.30: Xét về tỷ lệ lỗi trên đường truyền dữ liệu thì loại mạng nào cao nhất:</div>
+    <ul class="options">
+      <li>A. MAN</li>
+      <li data-correct="true">B. WAN</li>
+      <li>C. Internet</li>
+      <li>D. LAN</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.31 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.31: Độ dài tối đa cho phép khi sử dụng dây cáp mạng UTP là bao nhiêu mét:</div>
+    <ul class="options">
+      <li data-correct="true">A. 100</li>
+      <li>B. 200</li>
+      <li>C. 350</li>
+      <li>D. 400</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.32 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.32: Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khác phải trải qua giai đoạn nào:</div>
+    <ul class="options">
+      <li>A. Phân tích dữ liệu</li>
+      <li>B. Lọc dữ liệu</li>
+      <li data-correct="true">C. Đóng gói dữ liệu</li>
+      <li>D. Kiểm thử dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.33 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.33: Khi nối mạng giữa 2 máy tính, thường sử dụng loại cáp nào để nối trực tiếp giữa chúng:</div>
+    <ul class="options">
+      <li>A. Cáp quang</li>
+      <li>B. Cáp UTP thẳng</li>
+      <li>C. Cáp STP</li>
+      <li data-correct="true">D. Cáp UTP chéo</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.34 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.34: Các quy tắc điều quản việc truyền thông máy tính được gọi là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Các giao thức</li>
+      <li>B. Các dịch vụ</li>
+      <li>C. Các hệ điều hành mạng</li>
+      <li>D. Các thiết bị mang tải</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.35 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.35: Hai kiểu máy tính khác nhau có thể truyền thông nếu:</div>
+    <ul class="options">
+      <li>A. Chúng cài đặt cùng hệ điều hành mạng</li>
+      <li>B. Chúng tuân thủ theo mô hình OSI</li>
+      <li data-correct="true">C. Chúng cùng dùng giao thức TCP/IP</li>
+      <li>D. Chúng có phần cứng giống nhau</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.36 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.36: Để kết nối hai máy tính với nhau ta có thể sử dụng:</div>
+    <ul class="options">
+      <li>A. Hub</li>
+      <li>B. Switch</li>
+      <li>C. Nối cáp trực tiếp</li>
+      <li data-correct="true">D. Tất cả đều đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.37 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.37: Biểu diễn số 125 từ cơ số decimal sang cơ số binary:</div>
+    <ul class="options">
+      <li data-correct="true">A. 01111101</li>
+      <li>B. 01101111</li>
+      <li>C. 01011111</li>
+      <li>D. 1111101</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.38 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.38: Số nhị phân nào dưới đây có giá trị là 164:</div>
+    <ul class="options">
+      <li data-correct="true">A. 10100100</li>
+      <li>B. 10010010</li>
+      <li>C. 11000100</li>
+      <li>D. 10101010</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.39 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.39: Thiết bị nào hoạt động ở tầng Vật lý:</div>
+    <ul class="options">
+      <li>A. Switch</li>
+      <li>B. Card mạng</li>
+      <li data-correct="true">C. Hub và repeater</li>
+      <li>D. Router</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.40 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.40: Môi trường truyền tin thông thường trong mạng máy tính là:</div>
+    <ul class="options">
+      <li>A. Các loại cáp như: UTP, STP, cáp điện thoại, cáp quang....</li>
+      <li>B. Sóng hồng ngoại</li>
+      <li data-correct="true">C. Tất cả môi trường nêu trên</li>
+      <li>D. Không cái gì đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.41 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.41: Các thành phần tạo nên mạng là:</div>
+    <ul class="options">
+      <li>A. Máy tính, hub, switch</li>
+      <li>B. Network adapter, cable</li>
+      <li>C. Protocol</li>
+      <li data-correct="true">D. Tất cả đều đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.42 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.42: Khẳng định nào sau đây là đúng khi nói về đặc tính để phân biệt một tế bào (cell) và một gói tin:</div>
+    <ul class="options">
+      <li>A. Các tế bào nhỏ hơn một gói tin</li>
+      <li>B. Các tế bào không có địa chỉ vật lý</li>
+      <li data-correct="true">C. Các tế bào có độ dài cố định</li>
+      <li>D. Các gói tin có độ dài cố định</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.43 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.43: Protocol là:</div>
+    <ul class="options">
+      <li>A. Các qui tắc để cho phép các máy tính có thể giao tiếp được với nhau</li>
+      <li>B. Một trong những thành phần không thể thiếu trong hệ thống mạng</li>
+      <li>C. A và B sai</li>
+      <li data-correct="true">D. A và B đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.44 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.44: Thiết bị nào sau đây được sử dụng tại trung tâm của mạng hình sao:</div>
+    <ul class="options">
+      <li data-correct="true">A. Switch, Bridge</li>
+      <li>B. Netcard</li>
+      <li>C. Port</li>
+      <li>D. Repeater</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.45 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.45: Kiến trúc một mạng LAN có thể là:</div>
+    <ul class="options">
+      <li>A. RING</li>
+      <li>B. BUS</li>
+      <li>C. STAR</li>
+      <li data-correct="true">D. Có thể sử dụng riêng hoặc phối hợp cả A, B và C</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.46 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.46: Giá trị của 11101101 (giá trị các bit nhị phân) trong cơ số 16 là:</div>
+    <ul class="options">
+      <li>A. CB</li>
+      <li data-correct="true">B. ED</li>
+      <li>C. CF</li>
+      <li>D. EC</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.47 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.47: Mô tả nào sau đây dành cho mạng hình sao (star):</div>
+    <ul class="options">
+      <li>A. Truyền dữ liệu qua cáp đồng trục</li>
+      <li>B. Mỗi nút mạng đều kết nối trực tiếp với tất cả các nút khác</li>
+      <li data-correct="true">C. Có một nút trung tâm và các nút mạng khác kết nối đến</li>
+      <li>D. Các nút mạng sử dụng chung một đường cáp</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.48 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.48: Loại cáp nào được sử dụng phổ biến nhất hiện nay:</div>
+    <ul class="options">
+      <li>A. Cáp đồng trục</li>
+      <li>B. Cáp STP</li>
+      <li data-correct="true">C. Cáp UTP (CAT 5)</li>
+      <li>D. Cáp quang</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.49 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.49: Giao thức mạng nào dưới đây được sử dụng trong mạng cục bộ LAN:</div>
+    <ul class="options">
+      <li>A. TCP/IP</li>
+      <li>B. NetBIOS</li>
+      <li>C. IPX</li>
+      <li data-correct="true">D. Tất cả các câu trên</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.50 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.50: Khẳng định nào sau đây là đúng khi nói về giao thức sử dụng trên cáp sợi quang:</div>
+    <ul class="options">
+      <li>A. Frame Relay</li>
+      <li>B. FDDI</li>
+      <li>C. SONET</li>
+      <li data-correct="true">D. Cả B và C đều đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.51 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.51: Các chuẩn Internet là:</div>
+    <ul class="options">
+      <li>A. TCP và UDP</li>
+      <li>B. ACK và NAK</li>
+      <li data-correct="true">C. RFC và IETF</li>
+      <li>D. FDM và TDM</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.52 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.52: Giải thông (bandwidth) là:</div>
+    <ul class="options">
+      <li>A. Tốc độ truyền dữ liệu trên đường truyền</li>
+      <li data-correct="true">B. Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được</li>
+      <li>C. Độ đo sự yếu đi của tín hiệu trên đường truyền</li>
+      <li>D. Độ đo sự ảnh hưởng của tiếng ồn điện từ bên ngoài đến tín hiệu đường truyền</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.53 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.53: Thông lượng (throughput) là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Tốc độ truyền dữ liệu trên đường truyền</li>
+      <li>B. Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được</li>
+      <li>C. Độ đo sự yếu đi của tín hiệu trên đường truyền</li>
+      <li>D. Độ đo sự ảnh hưởng của tiếng ồn điện từ bên ngoài đến tín hiệu đường truyền</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.54 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.54: Độ suy hao là:</div>
+    <ul class="options">
+      <li>A. Tốc độ truyền dữ liệu trên đường truyền</li>
+      <li>B. Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được</li>
+      <li data-correct="true">C. Độ đo sự yếu đi của tín hiệu trên đường truyền</li>
+      <li>D. Độ đo sự ảnh hưởng của tiếng ồn điện từ bên ngoài đến tín hiệu đường truyền</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.55 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.55: Độ nhiễu điện từ là:</div>
+    <ul class="options">
+      <li>A. Tốc độ truyền dữ liệu trên đường truyền</li>
+      <li>B. Độ đo phạm vi tần số mà đường truyền có thể đáp ứng được</li>
+      <li>C. Độ đo sự yếu đi của tín hiệu trên đường truyền</li>
+      <li data-correct="true">D. Độ đo sự ảnh hưởng của tiếng ồn điện từ bên ngoài đến tín hiệu đường truyền</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.56 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.56: Truyền dẫn theo dải cơ sở (baseband):</div>
+    <ul class="options">
+      <li data-correct="true">A. Toàn bộ khả năng đường truyền được dành cho một kênh thông duy nhất</li>
+      <li>B. Hai kênh truyền thông cùng phân chia giải thông của đường truyền</li>
+      <li>C. Ba kênh truyền thông cùng phân chia giải thông của đường truyền</li>
+      <li>D. Nhiều kênh truyền thông cùng phân chia giải thông của đường truyền</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.57 -->
+  <div class="question-card">
+    <div class="q-title">Câu 1.57: Truyền dẫn theo dải rộng (broadband):</div>
+    <ul class="options">
+      <li>A. Toàn bộ khả năng đường truyền được dành cho một kênh thông duy nhất</li>
+      <li>B. Hai kênh truyền thông cùng phân chia giải thông của đường truyền</li>
+      <li>C. Ba kênh truyền thông cùng phân chia giải thông của đường truyền</li>
+      <li data-correct="true">D. Nhiều kênh truyền thông cùng phân chia giải thông của đường truyền</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <script>
+    // Xử lý khi click vào từng đáp án
+    document.querySelectorAll('.options li').forEach(item => {
+      item.addEventListener('click', function() {
+        const parent = this.parentElement;
+        const isCorrect = this.getAttribute('data-correct') === 'true';
+
+        // Xóa trạng thái click cũ của câu này
+        parent.querySelectorAll('li').forEach(li => {
+          li.classList.remove('correct-choice', 'wrong-choice');
+        });
+
+        // Đánh dấu
+        if (isCorrect) {
+          this.classList.add('correct-choice');
+        } else {
+          this.classList.add('wrong-choice');
+          const correctLi = parent.querySelector('[data-correct="true"]');
+          if (correctLi) correctLi.classList.add('correct-choice');
+        }
+      });
+    });
+
+    // Xử lý nút bấm "Hiện đáp án"
+    function revealAnswer(btn) {
+      const card = btn.closest('.question-card');
+      const correctLi = card.querySelector('[data-correct="true"]');
+      if (correctLi) {
+        correctLi.classList.add('correct-choice');
+      }
+    }
+  </script>
+</body>
+</html>

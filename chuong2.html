@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mạng Máy Tính - Phần 2: Mô Hình OSI và Mô Hình TCP/IP</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 16px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 24px;
+    }
+    .question-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .q-title {
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .options {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 12px 0;
+    }
+    .options li {
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .options li:hover {
+      background-color: #f1f3f4;
+    }
+    .options li.correct-choice {
+      background-color: #e6f4ea !important;
+      border-color: #34a853 !important;
+      color: #137333 !important;
+      font-weight: 600;
+    }
+    .options li.wrong-choice {
+      background-color: #fce8e6 !important;
+      border-color: #ea4335 !important;
+      color: #c5221f !important;
+    }
+    .btn-show {
+      background: none;
+      border: 1px solid #1a73e8;
+      color: #1a73e8;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-show:hover {
+      background-color: #e8f0fe;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PHẦN 2. MÔ HÌNH OSI VÀ MÔ HÌNH TCP/IP (1.58 - 1.88)</h1>
+
+  <!-- 1.58 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.58: Thứ tự của các tầng trong mô hình tham chiếu OSI:</div>
+    <ul class="options">
+      <li>A. Physical, Data Link, Network, Transport, System, Presentation, Application</li>
+      <li data-correct="true">B. Physical, Data Link, Network, Transport, Session, Presentation, Application</li>
+      <li>C. Physical, Data Link, Network, Transform, Session, Presentation, Application</li>
+      <li>D. Presentation, Data Link, Network, Transport, Session, Physical, Application</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.59 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.59: Thứ tự các tầng từ cao đến thấp trong mô hình TCP/IP:</div>
+    <ul class="options">
+      <li>A. Application, Internet, Transport, Network Access</li>
+      <li>B. Application, Network Access, Transport, Internet</li>
+      <li data-correct="true">C. Application, Transport, Internet, Network Access</li>
+      <li>D. Transport, Internet, Application, Network Access</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.60 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.60: Thứ tự đúng của các đơn vị dữ liệu trong mô hình TCP/IP:</div>
+    <ul class="options">
+      <li>A. Data, Frame, Segment, Packet, Bit</li>
+      <li>B. Data, Segment, Frame, Packet, Bit</li>
+      <li>C. Data, Packet, Frame, Segment, Bit</li>
+      <li data-correct="true">D. Data, Segment, Packet, Frame, Bit</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.61 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.61: Thứ tự các tầng của mô hình OSI theo thứ tự từ trên xuống là:</div>
+    <ul class="options">
+      <li>A. Ứng dụng, Trình diễn, Phiên, Giao vận, Liên kết, Mạng, Vật lý</li>
+      <li>B. Ứng dụng, Trình diễn, Phiên, Mạng, Giao vận, Liên kết, Vật lý</li>
+      <li data-correct="true">C. Ứng dụng, Trình diễn, Phiên, Giao vận, Mạng, Liên kết, Vật lý</li>
+      <li>D. Ứng dụng, Trình diễn, Giao vận, Phiên, Liên kết, Mạng, Vật lý</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.62 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.62: Chức năng của tầng trình diễn là chuyển đổi:</div>
+    <ul class="options">
+      <li data-correct="true">A. Ngôn ngữ người sử dụng về ngôn ngữ chung của mạng</li>
+      <li>B. Cấu trúc thông tin về cấu trúc khung</li>
+      <li>C. Khuôn dạng của gói tin</li>
+      <li>D. Các phiên truyền thông giữa các thực thể</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.63 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.63: Chức năng của tầng giao vận là:</div>
+    <ul class="options">
+      <li>A. Vận chuyển thông tin giữa các máy chủ (End to End)</li>
+      <li data-correct="true">B. Kiểm soát lỗi và luồng dữ liệu</li>
+      <li>C. Đóng gói và vận chuyển thông tin</li>
+      <li>D. Phân mảnh và đóng gói dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.64 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.64: Chức năng của tầng mạng là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Thực hiện chọn đường</li>
+      <li>B. Thực hiện chuyển mạch</li>
+      <li>C. Kiểm soát lỗi và luồng dữ liệu</li>
+      <li>D. Đóng gói dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.65 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.65: Chức năng của tầng liên kết dữ liệu là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Tạo khung thông tin (Frame)</li>
+      <li>B. Đóng gói dữ liệu</li>
+      <li>C. Chọn đường</li>
+      <li>D. Vận chuyển thông tin giữa các máy chủ (End to End)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.66 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.66: Chức năng của tầng vật lý là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Đảm bảo các yêu cầu truyền/nhận các chuỗi bit qua các phương tiện vật lý</li>
+      <li>B. Kiểm soát lỗi và luồng dữ liệu</li>
+      <li>C. Tạo khung thông tin</li>
+      <li>D. Phân mảnh và đóng gói dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.67 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.67: Khi kết nối máy tính từ nhà vào ISP thông qua đường dây điện thoại, tín hiệu trên đường điện thoại sẽ thuộc về tầng:</div>
+    <ul class="options">
+      <li>A. Giao vận</li>
+      <li>B. Mạng</li>
+      <li>C. Liên kết dữ liệu</li>
+      <li data-correct="true">D. Vật lý</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.68 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.68: Theo mô hình OSI, định dạng ảnh JPG nằm ở tầng:</div>
+    <ul class="options">
+      <li>A. Ứng dụng</li>
+      <li>B. Phiên</li>
+      <li data-correct="true">C. Trình diễn</li>
+      <li>D. Mạng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.69 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.69: Mô hình OSI chia hoạt động truyền thông thành mấy tầng:</div>
+    <ul class="options">
+      <li data-correct="true">A. 7 tầng</li>
+      <li>B. 5 tầng.</li>
+      <li>C. 4 tầng</li>
+      <li>D. 3 tầng.</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.70 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.70: Các tầng của mô hình OSI theo thứ tự từ dưới lên là:</div>
+    <ul class="options">
+      <li>A. Vật lý, TCP, IP, Mạng, Giao vận, Phiên, Trình diễn và Ứng dụng</li>
+      <li>B. Vật lý, Liên kết dữ liệu, Giao vận, Mạng, Phiên, Trình diễn và Ứng dụng.</li>
+      <li data-correct="true">C. Vật lý, Liên kết dữ liệu, Mạng, Giao vận, Phiên, Trình diễn và Ứng dụng.</li>
+      <li>D. Vật lý, Liên kết dữ liệu, Mạng, TCP, IP, Phiên và Ứng dụng.</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.71 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.71: Tầng nào xác định giao diện giữa người sử dụng và môi trường OSI:</div>
+    <ul class="options">
+      <li data-correct="true">A. Tầng ứng dụng</li>
+      <li>B. Tầng trình diễn</li>
+      <li>C. Tầng phiên</li>
+      <li>D. Tầng vận chuyển</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.72 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.72: Tầng nào dưới đây thiết lập, duy trì, huỷ bỏ "các giao dịch" giữa các thực thể đầu cuối:</div>
+    <ul class="options">
+      <li>A. Tầng mạng</li>
+      <li>B. Tầng liên kết dữ liệu</li>
+      <li data-correct="true">C. Tầng phiên</li>
+      <li>D. Tầng vật lý</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.73 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.73: Tầng nào thực hiện việc chuyển giao các thông điệp giữa các tiến trình trên các thiết bị:</div>
+    <ul class="options">
+      <li>A. Tầng mạng</li>
+      <li data-correct="true">B. Tầng giao vận</li>
+      <li>C. Tầng liên kết dữ liệu</li>
+      <li>D. Tầng phiên</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.74 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.74: Điều khiển các cuộc liên lạc là chức năng của tầng nào:</div>
+    <ul class="options">
+      <li>A. Vật lý</li>
+      <li>B. Tầng mạng</li>
+      <li data-correct="true">C. Tầng phiên</li>
+      <li>D. Tầng trình diễn</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.75 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.75: Trong mô hình OSI, tầng nào thực hiện việc chọn đường và chuyển tiếp thông tin:</div>
+    <ul class="options">
+      <li data-correct="true">A. Network</li>
+      <li>B. Transport</li>
+      <li>C. Session</li>
+      <li>D. Data link</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.76 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.76: Trong mô hình OSI, việc mở và đóng các cuộc hội thoại giữa các máy tính là trách nhiệm của:</div>
+    <ul class="options">
+      <li data-correct="true">A. Tầng phiên</li>
+      <li>B. Tầng giao vận</li>
+      <li>C. Tầng liên kết dữ liệu</li>
+      <li>D. Tầng vật lý</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.77 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.77: Trong mô hình OSI, đâu là mối quan hệ của một tầng (N) đối với tầng bên trên nó (N+1):</div>
+    <ul class="options">
+      <li data-correct="true">A. Tầng N cung cấp các dịch vụ cho tầng N+1</li>
+      <li>B. Tầng N+1 bổ sung một phần đầu vào thông tin nhận được từ tầng N</li>
+      <li>C. Tầng N vận dụng các dịch vụ do tầng N+1 cung cấp</li>
+      <li>D. Tầng N không có tác động gì lên tầng N+1</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.78 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.78: Trong mô hình mạng Internet, chuẩn UNICODE (cho việc mã hoá các ký tự) sẽ nằm ở tầng:</div>
+    <ul class="options">
+      <li data-correct="true">A. Ứng dụng</li>
+      <li>B. Giao vận</li>
+      <li>C. Mạng</li>
+      <li>D. Liên kết dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.79 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.79: Theo mô hình OSI, định dạng ảnh JPG nằm ở tầng:</div>
+    <ul class="options">
+      <li>A. Ứng dụng</li>
+      <li>B. Phiên</li>
+      <li data-correct="true">C. Trình diễn</li>
+      <li>D. Mạng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.80 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.80: Đơn vị dữ liệu ở tầng presentation là:</div>
+    <ul class="options">
+      <li>A. Byte</li>
+      <li data-correct="true">B. Data</li>
+      <li>C. Frame</li>
+      <li>D. Packet</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.81 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.81: Chọn chức năng của tầng Presentation:</div>
+    <ul class="options">
+      <li data-correct="true">A. Mã hoá dữ liệu và nén dữ liệu</li>
+      <li>B. Cung cấp các dịch vụ mạng người dùng</li>
+      <li>C. Đánh địa chỉ</li>
+      <li>D. Tất cả đều sai</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.82 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.82: Tầng nào trong mô hình OSI chịu trách nhiệm mã hoá dữ liệu:</div>
+    <ul class="options">
+      <li>A. Application</li>
+      <li data-correct="true">B. Presentation</li>
+      <li>C. Session</li>
+      <li>D. Transport</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.83 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.83: Tầng nào trong mô hình OSI làm việc với các tín hiệu điện:</div>
+    <ul class="options">
+      <li>A. Data Link</li>
+      <li>B. Network</li>
+      <li data-correct="true">C. Physical</li>
+      <li>D. Transport</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.84 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.84: Mô hình TCP/IP chia hoạt động truyền thông thành mấy tầng:</div>
+    <ul class="options">
+      <li>A. 7 tầng</li>
+      <li>B. 6 tầng.</li>
+      <li data-correct="true">C. 4 tầng</li>
+      <li>D. 3 tầng.</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.85 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.85: Thứ tự các tầng từ thấp đến cao trong mô hình TCP/IP:</div>
+    <ul class="options">
+      <li>A. Ứng dụng, Mạng, Giao vận, Truy nhập mạng</li>
+      <li>B. Mạng, Giao vận, Truy nhập mạng, Ứng dụng</li>
+      <li data-correct="true">C. Truy nhập mạng, Mạng, Giao vận, Ứng dụng</li>
+      <li>D. Truy nhập mạng, Giao vận, Mạng, Ứng dụng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.86 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.86: Đơn vị dữ liệu ở tầng Data link là:</div>
+    <ul class="options">
+      <li>A. Byte</li>
+      <li>B. Data</li>
+      <li data-correct="true">C. Frame</li>
+      <li>D. Packet</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.87 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.87: Đơn vị dữ liệu ở tầng Internet là:</div>
+    <ul class="options">
+      <li>A. Byte</li>
+      <li>B. Data</li>
+      <li>C. Frame</li>
+      <li data-correct="true">D. Datagram</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.88 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.88: Chức năng của tầng ứng dụng là:</div>
+    <ul class="options">
+      <li>A. Tạo khung thông tin (Frame)</li>
+      <li>B. Đóng gói dữ liệu</li>
+      <li data-correct="true">C. Cung cấp các phương tiện để người dùng có thể truy nhập được vào môi trường mạng</li>
+      <li>D. Vận chuyển thông tin giữa các máy chủ (End to End)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <script>
+    document.querySelectorAll('.options li').forEach(item => {
+      item.addEventListener('click', function() {
+        const parent = this.parentElement;
+        const isCorrect = this.getAttribute('data-correct') === 'true';
+
+        parent.querySelectorAll('li').forEach(li => {
+          li.classList.remove('correct-choice', 'wrong-choice');
+        });
+
+        if (isCorrect) {
+          this.classList.add('correct-choice');
+        } else {
+          this.classList.add('wrong-choice');
+          const correctLi = parent.querySelector('[data-correct="true"]');
+          if (correctLi) correctLi.classList.add('correct-choice');
+        }
+      });
+    });
+
+    function revealAnswer(btn) {
+      const card = btn.closest('.question-card');
+      const correctLi = card.querySelector('[data-correct="true"]');
+      if (correctLi) {
+        correctLi.classList.add('correct-choice');
+      }
+    }
+  </script>
+</body>
+</html>
+```[cite: 8, 9, 10, 11, 12]

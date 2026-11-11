@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mạng Máy Tính - Phần 3: Tầng Ứng Dụng</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 16px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #1a73e8;
+      margin-bottom: 24px;
+    }
+    .question-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .q-title {
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .options {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 12px 0;
+    }
+    .options li {
+      padding: 8px 12px;
+      margin-bottom: 6px;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .options li:hover {
+      background-color: #f1f3f4;
+    }
+    .options li.correct-choice {
+      background-color: #e6f4ea !important;
+      border-color: #34a853 !important;
+      color: #137333 !important;
+      font-weight: 600;
+    }
+    .options li.wrong-choice {
+      background-color: #fce8e6 !important;
+      border-color: #ea4335 !important;
+      color: #c5221f !important;
+    }
+    .btn-show {
+      background: none;
+      border: 1px solid #1a73e8;
+      color: #1a73e8;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .btn-show:hover {
+      background-color: #e8f0fe;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PHẦN 3. TẦNG ỨNG DỤNG (1.89 - 1.126)</h1>
+
+  <!-- 1.89 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.89: FTP là từ viết tắt của:</div>
+    <ul class="options">
+      <li data-correct="true">A. File Transfer Protocol</li>
+      <li>B. Folder Transfer Protocol</li>
+      <li>C. Protocol Transfer Program</li>
+      <li>D. Protocol Transfer Folder</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.90 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.90: HTTP là từ viết tắt của:</div>
+    <ul class="options">
+      <li>A. HyperText Transmision Protocol</li>
+      <li>B. HyperText Transit Protocol</li>
+      <li data-correct="true">C. HyperText Transfer Protocol</li>
+      <li>D. HyperText Treat Protocol</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.91 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.91: Giao thức POP3 sử dụng cổng dịch vụ số:</div>
+    <ul class="options">
+      <li>A. 53</li>
+      <li>B. 23</li>
+      <li>C. 25</li>
+      <li data-correct="true">D. 110</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.92 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.92: Dịch vụ DNS có chức năng chính là gì:</div>
+    <ul class="options">
+      <li>A. Phân giải tên netbios</li>
+      <li data-correct="true">B. Phân giải tên miền (IP sang tên và ngược lại)</li>
+      <li>C. Phân giải địa chỉ MAC</li>
+      <li>D. Tất cả đều sai</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.93 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.93: Nhược điểm nếu xây dựng hệ thống dịch vụ tên miền (DNS) theo mô hình tập trung là:</div>
+    <ul class="options">
+      <li>A. Nếu điểm tập trung bị hỏng, toàn bộ hệ thống sẽ bị tê liệt</li>
+      <li>B. Số lượng yêu cầu phục vụ tại điểm tập trung duy nhất sẽ rất lớn</li>
+      <li>C. Chi phí bảo trì hệ thống rất lớn</li>
+      <li data-correct="true">D. Tất cả câu trả lời trên</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.94 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.94: Số hiệu cổng (port) của giao thức truyền mail SMTP là:</div>
+    <ul class="options">
+      <li>A. 23</li>
+      <li data-correct="true">B. 25</li>
+      <li>C. 21</li>
+      <li>D. 110</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.95 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.95: Giao thức truyền thông trong DNS sử dụng cổng dịch vụ số:</div>
+    <ul class="options">
+      <li>A. 21</li>
+      <li>B. 25</li>
+      <li data-correct="true">C. 53</li>
+      <li>D. 110</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.96 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.96: Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là sai:</div>
+    <ul class="options">
+      <li>A. SMTP: TCP Port 25</li>
+      <li data-correct="true">B. FTP: UDP Port 22</li>
+      <li>C. HTTP: TCP Port 80</li>
+      <li>D. DNS: UDP Port 53</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.97 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.97: Giao thức nào sau đây hoạt động trên nền giao thức UDP:</div>
+    <ul class="options">
+      <li>A. ARP</li>
+      <li data-correct="true">B. DNS</li>
+      <li>C. Telnet</li>
+      <li>D. Tất cả các câu trên đều đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.98 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.98: Khẳng định nào sau đây là đúng khi nói về ngôn ngữ đánh dấu siêu văn bản HTML:</div>
+    <ul class="options">
+      <li>A. Là một thủ tục World Wide Web</li>
+      <li>B. Phương thức liên kết các file văn bản</li>
+      <li data-correct="true">C. Là công cụ soạn thảo trang thông tin Web</li>
+      <li>D. Giao diện Web</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.99 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.99: Khẳng định nào sau đây là đúng khi nói về tên gọi loại máy chủ cung cấp dịch vụ thư điện tử:</div>
+    <ul class="options">
+      <li>A. Web Server</li>
+      <li data-correct="true">B. Mail Server</li>
+      <li>C. FTP Server</li>
+      <li>D. Proxy</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.100 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.100: Khẳng định nào sau đây là đúng khi nói về đơn vị dữ liệu của tầng Ứng dụng (Application):</div>
+    <ul class="options">
+      <li data-correct="true">A. Message (Thông điệp)</li>
+      <li>B. Segment/ Datagram (Đoạn/Bó dữ liệu)</li>
+      <li>C. Packet (Gói dữ liệu)</li>
+      <li>D. Frame (Khung dữ liệu)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.101 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.101: HTTP (Hypertext Transfer Protocol) là:</div>
+    <ul class="options">
+      <li data-correct="true">A. Giao thức ứng dụng cho phép các máy tính giao tiếp với nhau qua Web và có khả năng liên kết các trang Web với nhau.</li>
+      <li>B. Giao thức tầng vận chuyển cho phép truyền tải các trang Web.</li>
+      <li>C. Một thành phần tên miền.</li>
+      <li>D. Giao diện Web.</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.102 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.102: Các giao thức ứng dụng hoạt động trên:</div>
+    <ul class="options">
+      <li>A. Tầng trình diễn</li>
+      <li>B. Tầng phiên</li>
+      <li data-correct="true">C. Tầng ứng dụng</li>
+      <li>D. Tầng liên kết dữ liệu</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.103 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.103: HTTP làm nhiệm vụ gì:</div>
+    <ul class="options">
+      <li data-correct="true">A. Cung cấp một cơ chế để lấy dữ liệu từ server chuyển đến client</li>
+      <li>B. Hiển thị các trang Web từ xa trên màn hình và giúp người dùng tương tác với chúng</li>
+      <li>C. Cung cấp giao diện người dùng như các nút bấm, thanh trượt,...</li>
+      <li>D. Cung cấp dữ liệu từ server sử dụng giao thức chuyển file (File Transport Protocol)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.104 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.104: Trên Internet, email được gửi từ máy nguồn bằng cách thiết lập một kết nối TCP đến một cổng cụ thể trên máy đích. Cổng đó là:</div>
+    <ul class="options">
+      <li>A. 80</li>
+      <li>B. 110</li>
+      <li data-correct="true">C. 25</li>
+      <li>D. 404</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.105 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.105: Giả sử có một bản ghi của dịch vụ DNS là (cnn.com, rl.infor.cnn.com, CNAME)</div>
+    <ul class="options">
+      <li data-correct="true">A. cnn.com là tên viết tắt (rút gọn) của rl.infor.cnn.com</li>
+      <li>B. rl.infor.cnn.com là tên viết tắt (rút gọn) của cnn.com</li>
+      <li>C. Cả A và B đều đúng</li>
+      <li>D. Cả A và B đều sai</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.106 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.106: Giao thức được sử dụng để 2 bên truyền file là:</div>
+    <ul class="options">
+      <li>A. HTTP</li>
+      <li data-correct="true">B. FTP</li>
+      <li>C. SMTP</li>
+      <li>D. SNMP</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.107 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.107: Giả sử có một bản ghi của dịch vụ DNS là (alpha.com, 123.4.5.7, NS). Chọn câu trả lời đúng:</div>
+    <ul class="options">
+      <li>A. 123.4.5.7 là địa chỉ IP của máy alpha.com</li>
+      <li data-correct="true">B. alpha.com là một tên miền, không phải là một máy</li>
+      <li>C. 123.4.5.7 là địa chỉ IP của máy phục vụ thư (mail server) có tên miền là google.com</li>
+      <li>D. Tất cả đều sai</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.108 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.108: Giả sử tất cả các máy tính thuê bao Internet của FPT khi truy cập vào website google.com đều bị chuyển hướng sang một trang web khác. Các máy tính thuê bao các ISP khác không gặp tình huống này. Nguyên nhân gây ra lỗi lớn nhất sẽ là:</div>
+    <ul class="options">
+      <li>A. Các máy tính bị nhiễm virus</li>
+      <li>B. Website google bị lỗi</li>
+      <li data-correct="true">C. DNS server của FPT bị lỗi</li>
+      <li>D. Router ra ngoài của ISP FPT bị lỗi</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.109 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.109: Các Web client thường được gọi là gì:</div>
+    <ul class="options">
+      <li>A. Netscape Navigator</li>
+      <li data-correct="true">B. Browsers</li>
+      <li>C. Mosaic</li>
+      <li>D. HTML interpreter (trình thông dịch HTML)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.110 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.110: Web server thường sử dụng phần mềm chạy trên:</div>
+    <ul class="options">
+      <li>A. Cổng 25</li>
+      <li>B. Cổng 404</li>
+      <li>C. Cổng 125</li>
+      <li data-correct="true">D. Cổng 80</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.111 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.111: Để thiết kế một trang Web như chúng ta vẫn thấy trên màn hình (các định dạng font chữ, màu sắc, các hiệu ứng đồ họa, các đường liên kết), người ta đã phát triển một kiểu định dạng đặc biệt. Định dạng trang chuẩn được dùng trong Web là:</div>
+    <ul class="options">
+      <li>A. HTTP</li>
+      <li>B. Mosaic</li>
+      <li data-correct="true">C. HTML</li>
+      <li>D. Netscape</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.112 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.112: Phát biểu nào sau đây đúng về giao thức HTTP:</div>
+    <ul class="options">
+      <li>A. Phiên bản giao thức luôn được đặt trong tất cả thông điệp</li>
+      <li>B. Tất cả các tiêu đề đều dưới dạng text</li>
+      <li>C. Tất cả dữ liệu đều truyền dưới dạng văn bản (text)</li>
+      <li data-correct="true">D. A và B</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.113 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.113: Trong những thông điệp HTTP trả lời dưới đây, thông điệp nào đúng:</div>
+    <ul class="options">
+      <li data-correct="true">A. 200 "OK"</li>
+      <li>B. 201 "Moved Permanently"</li>
+      <li>C. 404 "Not Modified"</li>
+      <li>D. 20 "Not Implemented"</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.114 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.114: Những thông điệp nào dưới đây được giao thức POP3 hỗ trợ:</div>
+    <ul class="options">
+      <li>A. Kiểm chứng (Authorization)</li>
+      <li>B. Đọc một thư (Retrieving a message)</li>
+      <li>C. Xoá một thư</li>
+      <li data-correct="true">D. Tất cả đều đúng</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.115 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.115: Giao thức nào thuộc tầng Application:</div>
+    <ul class="options">
+      <li>A. IP</li>
+      <li data-correct="true">B. HTTP</li>
+      <li>C. NFS</li>
+      <li>D. TCP</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.116 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.116: Cho biết ứng dụng nào thuộc loại Client/Server:</div>
+    <ul class="options">
+      <li>A. WinWord</li>
+      <li data-correct="true">B. WWW (World Wide Web)</li>
+      <li>C. Excel</li>
+      <li>D. Photoshop</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.117 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.117: Mã 404 trong thông điệp trả lời từ Web server cho Web client có ý nghĩa:</div>
+    <ul class="options">
+      <li>A. Server không hiểu yêu cầu của client</li>
+      <li data-correct="true">B. Đối tượng client yêu cầu không có</li>
+      <li>C. Không có câu trả lời nào đúng</li>
+      <li>D. Yêu cầu của Client không hợp lệ</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.118 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.118: Giao thức được sử dụng để truyền thư giữa các máy chủ phục vụ thư (Mail server) là:</div>
+    <ul class="options">
+      <li>A. HTTP</li>
+      <li>B. FTP</li>
+      <li data-correct="true">C. SMTP</li>
+      <li>D. POP</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.119 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.119: Ứng dụng nào sử dụng mô hình client/server:</div>
+    <ul class="options">
+      <li>A. Bit Torrent</li>
+      <li data-correct="true">B. Email, Web</li>
+      <li>C. Skype</li>
+      <li>D. KaZaA</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.120 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.120: Ứng dụng nào sử dụng mô hình P2P:</div>
+    <ul class="options">
+      <li>A. Telnet</li>
+      <li>B. Email</li>
+      <li>C. Web</li>
+      <li data-correct="true">D. Skype</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.121 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.121: Các ứng dụng dùng giao thức TCP:</div>
+    <ul class="options">
+      <li data-correct="true">A. Web, truyền file, Email</li>
+      <li>B. Web, DNS, điện thoại Internet</li>
+      <li>C. Hội thảo từ xa, điện thoại Internet, streaming media</li>
+      <li>D. Telnet, DNS, Email</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.122 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.122: Các ứng dụng dùng giao thức UDP:</div>
+    <ul class="options">
+      <li>A. Web, truyền file, Email</li>
+      <li>B. Web, DNS, điện thoại Internet</li>
+      <li data-correct="true">C. Hội thảo từ xa, điện thoại Internet, streaming media</li>
+      <li>D. Telnet, DNS, Email</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.123 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.123: Định danh (identifier) của tiến trình bao gồm:</div>
+    <ul class="options">
+      <li>A. Địa chỉ IP của host</li>
+      <li data-correct="true">B. Địa chỉ IP và số hiệu cổng liên kết với tiến trình trên host</li>
+      <li>C. Địa chỉ IP nguồn và địa chỉ IP đích</li>
+      <li>D. Địa chỉ IP nguồn, số hiệu cổng nguồn, địa chỉ IP đích, số hiệu cổng đích</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.124 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.124: Đâu là một URL:</div>
+    <ul class="options">
+      <li>A. www.someschool.edu</li>
+      <li>B. 192.168.1.1</li>
+      <li>C. .../someDept/pic.gif</li>
+      <li data-correct="true">D. www.someschool.edu/someDept/pic.gif</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.125 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.125: RTT (Round Trip Time) là:</div>
+    <ul class="options">
+      <li>A. Thời gian khởi tạo kết nối TCP</li>
+      <li>B. Thời gian để gửi một gói nhỏ đi từ client đến server</li>
+      <li data-correct="true">C. Thời gian để gửi một gói nhỏ đi từ client đến server và quay lại</li>
+      <li>D. Thời gian truyền file</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <!-- 1.126 -->
+  <div class="question-card">
+    <div class="q-title">Câu hỏi 1.126: Trong cơ sở dữ liệu của DNS lưu trữ các resource record (RR) có dạng:</div>
+    <ul class="options">
+      <li data-correct="true">A. (name, value, type, ttl)</li>
+      <li>B. (value, name, ttl, type)</li>
+      <li>C. (value, ttl, name, type)</li>
+      <li>D. (name, type, ttl, value)</li>
+    </ul>
+    <button class="btn-show" onclick="revealAnswer(this)">Hiện đáp án</button>
+  </div>
+
+  <script>
+    document.querySelectorAll('.options li').forEach(item => {
+      item.addEventListener('click', function() {
+        const parent = this.parentElement;
+        const isCorrect = this.getAttribute('data-correct') === 'true';
+
+        parent.querySelectorAll('li').forEach(li => {
+          li.classList.remove('correct-choice', 'wrong-choice');
+        });
+
+        if (isCorrect) {
+          this.classList.add('correct-choice');
+        } else {
+          this.classList.add('wrong-choice');
+          const correctLi = parent.querySelector('[data-correct="true"]');
+          if (correctLi) correctLi.classList.add('correct-choice');
+        }
+      });
+    });
+
+    function revealAnswer(btn) {
+      const card = btn.closest('.question-card');
+      const correctLi = card.querySelector('[data-correct="true"]');
+      if (correctLi) {
+        correctLi.classList.add('correct-choice');
+      }
+    }
+  </script>
+</body>
+</html>
+```[cite: 12, 13, 14, 15, 16, 17]
